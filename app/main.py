@@ -34,11 +34,13 @@ uploaded_file = st.file_uploader(
 )
 
 # =========================================================
-# DATA PROCESSING
-# =========================================================
-if uploaded_file is not None:
+ 
+    # DATA PROCESSING
+# =====================================================
 
-    # Read CSV / Excel uploaded by user
+if uploaded_file is not None:
+
+    # Read CSV / Excel
     if uploaded_file.name.lower().endswith(".csv"):
         df = pd.read_csv(uploaded_file)
     else:
@@ -56,7 +58,12 @@ else:
         st.info("📊 Default sample dataset loaded automatically.")
     except FileNotFoundError:
         st.error("❌ Default dataset not found.")
-        st.stop() 
+        st.stop()
+
+
+# =====================================================
+# SIDEBAR FILTERS
+# =====================================================
 
     # SIDEBAR FILTERS
     # =====================================================
