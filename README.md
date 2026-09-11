@@ -116,3 +116,5 @@ Which product has the lowest sales?
 Compare Electronics and Fashion sales.
 
 Give me 3 business recommendations based on the sales and profit data.
+
+ Analyst](ai-analyst.png)
