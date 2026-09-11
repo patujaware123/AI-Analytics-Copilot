@@ -1,58 +1,33 @@
 # 🤖 AI Analytics Copilot – Intelligent Data Assistant
 
-An AI-powered data analytics dashboard that helps users explore sales data, detect anomalies, generate forecasts, and ask natural-language questions using a local LLM.
+[🚀 Live Demo](https://ai-analytics-copilot-cpwxvt2dpembwbzbzcv42q.streamlit.app/)
 
-## 🚀 Live Demo
+[📂 GitHub Repository](https://github.com/patujaware123/AI-Analytics-Copilot)
 
-👉 https://ai-analytics-copilot-cpwxvt2dpembwbzbzcv42q.streamlit.app/
+## 📌 Project Overview
 
-## 💻 GitHub Repository
+AI Analytics Copilot is an AI-powered Data Analytics application that helps users explore datasets, identify business insights, detect anomalies, forecast sales, and ask questions using natural language.
 
-👉 https://github.com/patujaware123/AI-Analytics-Copilot
+The project combines **Python, Pandas, Streamlit, Data Analytics, Machine Learning techniques, and a local LLM (Llama 3.2)** to create an interactive Data Analyst assistant.
 
----
+## 🚀 Key Features
 
-## 📊 Project Overview
-
-**AI Analytics Copilot** is an interactive data analytics application built with Python and Streamlit.
-
-It combines traditional data analytics with AI to help users:
-
-- Upload CSV or Excel datasets
-- Clean and validate data automatically
-- Analyze sales and profit performance
-- Detect potential data anomalies
-- Forecast future sales
-- Generate business insights
-- Ask questions about the dataset using natural language
-- Export cleaned data and anomaly reports
-
-The goal is to simulate an **AI-powered Data Analyst** that can transform raw business data into actionable insights.
+- 📊 Interactive Business Dashboard
+- 🔍 Data Filtering and Exploration
+- 🧹 Automatic Data Cleaning
+- 🚨 AI-Assisted Anomaly Detection
+- 📈 Sales Forecasting
+- 🤖 Natural Language AI Analyst
+- 💡 Automatic Business Insights
+- 📥 Cleaned Data Export
+- 📄 Anomaly Report Export
+- 📂 CSV and Excel File Upload
 
 ---
 
-## ✨ Key Features
+## 📊 Business Dashboard
 
-### 📁 Data Upload
-
-- Upload CSV files
-- Upload Excel files
-- Automatic dataset loading
-- Dataset preview
-
-### 🧹 Data Cleaning
-
-Automatically handles:
-
-- Missing values
-- Duplicate records
-- Data validation
-
-The application displays data quality information before and after cleaning.
-
-### 📊 Business Dashboard
-
-Interactive KPIs including:
+The dashboard provides an overview of important business KPIs including:
 
 - Total Sales
 - Total Profit
@@ -60,22 +35,26 @@ Interactive KPIs including:
 - Quantity Sold
 - Total Customers
 
-### 🔎 Interactive Filters
+![Dashboard Overview](dashboard.png)
 
-Users can filter the dataset by:
+---
+
+## 🔎 Interactive Filters
+
+Users can filter the dataset based on:
 
 - Region
 - Category
 - Customer Type
 - Payment Method
 
-All dashboard metrics and charts update according to the selected filters.
+The charts and KPIs automatically update according to the selected filters.
 
 ---
 
 ## 📈 Data Visualizations
 
-The dashboard provides multiple interactive visualizations:
+The dashboard includes:
 
 - Sales Trend Over Time
 - Sales by Category
@@ -84,57 +63,42 @@ The dashboard provides multiple interactive visualizations:
 - Top 10 Products by Sales
 - Monthly Sales & Profit
 
-These visualizations help identify sales trends, product performance, regional performance, and profitability.
-
 ---
 
 ## 🚨 AI Anomaly Detection
 
-The application detects potential anomalies using the **Interquartile Range (IQR)** method.
+The application automatically identifies unusual values in sales and profit data using the **IQR (Interquartile Range) method**.
 
-Anomalies are identified in:
+It provides:
 
-- Sales
-- Profit
+- Missing Values Before Cleaning
+- Missing Values After Cleaning
+- Duplicate Records
+- Sales Anomalies
+- Profit Anomalies
+- Total Anomaly Records
 
-The dashboard also shows:
-
-- Missing values before cleaning
-- Missing values after cleaning
-- Duplicate records
-- Clean rows
-- Sales anomalies
-- Profit anomalies
-- Total unique anomaly rows
-
-This helps identify unusual business transactions and potential data-quality issues.
+![Anomaly Detection](anomaly-detection.png)
 
 ---
 
-## 🔮 Sales Forecasting
+## 📈 Sales Forecasting
 
-The dashboard includes a simple sales forecasting module.
+The application provides a simple sales forecasting baseline using a **3-month moving average**.
 
-It:
+The forecast helps users understand the expected sales trend for upcoming months.
 
-1. Aggregates historical sales by month
-2. Calculates a 3-month moving-average baseline
-3. Forecasts the next 3 months
-4. Displays historical and forecasted sales visually
+> Note: Forecast values are estimates and should be used as a baseline for analysis rather than guaranteed future results.
 
-> Forecast values are estimates based on historical sales patterns and should not be treated as guaranteed future results.
+![Sales Forecast](sales-forecast.png)
 
 ---
 
 ## 🤖 AI Analyst
 
-Users can ask natural-language questions about the dataset.
+The AI Analyst allows users to ask questions about their dataset using natural language.
 
-The AI Analyst combines **Python/Pandas calculations with a local Llama 3.2 model**.
-
-Python performs the actual data calculations, while the AI generates a clear business-friendly explanation of the verified results.
-
-### 💬 Example Questions
+### Example Questions
 
 ```text
 Which category has the highest sales?
