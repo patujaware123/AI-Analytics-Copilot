@@ -56,7 +56,8 @@ else:
         st.info("📊 Default sample dataset loaded automatically.")
     except FileNotFoundError:
         st.error("❌ Default dataset not found.")
-        st.stop() =====================================================
+        st.stop() 
+
     # SIDEBAR FILTERS
     # =====================================================
 
