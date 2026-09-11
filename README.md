@@ -96,25 +96,19 @@ The forecast helps users understand the expected sales trend for upcoming months
 
 ## 🤖 AI Analyst
 
-The AI Analyst allows users to ask questions about their dataset using natural language.
+The AI Analyst allows users to ask questions about the dataset using natural language.
 
 ### Example Questions
 
-```text
-Which category has the highest sales?
+- Which category has the highest sales?
+- Which region has the highest sales?
+- Which product has the highest sales?
+- Which category has the highest profit?
+- Show me the top 3 products by sales.
+- Which product has the lowest sales?
+- Compare Electronics and Fashion sales.
+- Give me 3 business recommendations based on the sales and profit data.
 
-Which region has the highest sales?
+The application first performs calculations using **Python and Pandas** to generate verified results and then uses **Llama 3.2** to provide a clear business explanation.
 
-Which product has the highest sales?
-
-Which category has the highest profit?
-
-Show me the top 3 products by sales.
-
-Which product has the lowest sales?
-
-Compare Electronics and Fashion sales.
-
-Give me 3 business recommendations based on the sales and profit data."
-
- Analyst](ai-analyst.png)
+![AI Analyst](ai-analyst.png)
